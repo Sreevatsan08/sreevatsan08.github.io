@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V Sreevatsan | Cloud Software Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{
+background:#05070d;
+color:white;
+overflow-x:hidden;
+}
+
+/* ===== BACKGROUND GLOW ===== */
+body::before{
+content:"";
+position:fixed;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#00e0ff20,transparent);
+top:-150px;
+right:-150px;
+z-index:-1;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(15px);
+border-bottom:1px solid #111;
+position:sticky;
+top:0;
+}
+
+nav h3{color:#00e0ff;}
+
+/* ===== HERO ===== */
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:0 10%;
+animation:fadeUp 1s ease forwards;
+}
+
+.hero h1{
+font-size:60px;
+background:linear-gradient(90deg,#00e0ff,#7afcff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.tagline{
+margin:20px 0;
+font-size:22px;
+color:#7afcff;
+min-height:28px;
+}
+
+.hero p{
+max-width:600px;
+color:#cfcfcf;
+}
+
+.btn{
+margin-top:25px;
+padding:14px 32px;
+border-radius:40px;
+background:linear-gradient(90deg,#00e0ff,#00ffa6);
+color:black;
+font-weight:600;
+text-decoration:none;
+display:inline-block;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 0 20px #00e0ff;
+}
+
+/* ===== SECTIONS ===== */
+section{padding:120px 10%;}
+h2{font-size:34px;margin-bottom:40px;}
+
+/* ===== GRID ===== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+/* ===== CARDS ===== */
+.card{
+background:#0c101b;
+border:1px solid #151b2b;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+position:relative;
+overflow:hidden;
+opacity:0;
+transform:translateY(40px);
+}
+
+.card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.card::before{
+content:"";
+position:absolute;
+top:-50%;
+left:-50%;
+width:200%;
+height:200%;
+background:linear-gradient(120deg,transparent,#00e0ff20,transparent);
+transform:rotate(25deg);
+transition:.6s;
+}
+
+.card:hover::before{left:100%;}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #00e0ff40;
+border-color:#00e0ff;
+}
+
+.card h3{color:#7afcff;margin-bottom:10px;}
+
+/* ===== SKILLS ===== */
+.skills span{
+display:inline-block;
+margin:6px;
+padding:10px 18px;
+border-radius:30px;
+border:1px solid #151b2b;
+color:#7afcff;
+}
+
+/* ===== ACHIEVEMENTS ===== */
+.achievements{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
+}
+
+.ach-card{
+background:#0c101b;
+border-left:4px solid #00e0ff;
+padding:28px;
+border-radius:16px;
+transition:.35s;
+opacity:0;
+transform:translateY(40px);
+}
+
+.ach-card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.ach-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #00e0ff30;
+}
+
+.ach-card h3{color:#7afcff;margin-bottom:8px;}
+
+/* ===== CONTACT ===== */
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.contact-card{
+text-decoration:none;
+color:white;
+background:#0c101b;
+border:1px solid #151b2b;
+padding:28px;
+border-radius:18px;
+transition:.35s;
+display:block;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+border-color:#00e0ff;
+box-shadow:0 0 20px #00e0ff40;
+}
+
+.contact-card h3{
+color:#7afcff;
+margin-bottom:8px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+text-align:center;
+padding:40px;
+color:#888;
+background:#04060d;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h3>VS</h3>
+<p>Cloud Software Portfolio</p>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+<h1>V Sreevatsan</h1>
+
+<p class="tagline" id="typing"></p>
+
+<p>
+Final year B.Tech CSBS student aspiring to grow in software and cloud engineering.
+Currently building strong fundamentals in Python, frontend technologies and CI/CD workflows.
+</p>
+
+<a href="https://github.com/Sreevatsan08" target="_blank" class="btn">View GitHub</a>
+
+</section>
+
+<!-- JOURNEY -->
+<section>
+
+<h2>🚀 My Journey</h2>
+
+<div class="grid">
+<div class="card"><h3>Software Development</h3><p>Learning Python basics and building frontend web interfaces.</p></div>
+<div class="card"><h3>Cloud Learning</h3><p>Exploring deployment workflows and cloud engineering concepts.</p></div>
+<div class="card"><h3>CI/CD Exposure</h3><p>Understanding automation pipelines and development lifecycle.</p></div>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section>
+
+<h2>💻 Projects</h2>
+
+<div class="grid">
+<div class="card"><h3>ResQube</h3><p>GPS-based real-life tracking application concept focusing on safety systems.</p></div>
+<div class="card"><h3>CI/CD Pipeline Exploration</h3><p>Hands-on learning of deployment automation workflows.</p></div>
+</div>
+
+</section>
+
+<!-- SKILLS -->
+<section>
+
+<h2>🧰 Skills</h2>
+
+<div class="skills">
+<span>Python Basics</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Cloud Fundamentals</span>
+<span>CI/CD Concepts</span>
+<span>Figma</span>
+<span>Canva</span>
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section>
+
+<h2>🏆 Achievements</h2>
+
+<div class="achievements">
+
+<div class="ach-card">
+<h3>🥈 ADZAP</h3>
+<p>2nd Runner Up — Creative strategy and presentation competition.</p>
+</div>
+
+<div class="ach-card">
+<h3>🥈 Stranger Strategies</h3>
+<p>First Runner Up — Analytical thinking and teamwork event.</p>
+</div>
+
+<div class="ach-card">
+<h3>🥈 IEEE Bid War</h3>
+<p>First Runner Up — Technical innovation and decision-making challenge.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section>
+
+<h2>📬 Contact</h2>
+
+<div class="contact-grid">
+
+<a href="https://github.com/Sreevatsan08" target="_blank" class="contact-card">
+<h3>💻 GitHub</h3>
+<p>github.com/Sreevatsan08</p>
+</a>
+
+<a href="https://www.linkedin.com/in/sreevatsan8" target="_blank" class="contact-card">
+<h3>🔗 LinkedIn</h3>
+<p>www.linkedin.com/in/sreevatsan8</p>
+</a>
+
+<a href="mailto:sreevatsan943@gmail.com" class="contact-card">
+<h3>✉️ Email</h3>
+<p>sreevatsan943@gmail.com</p>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 V Sreevatsan | Aspiring Cloud Software Engineer</p>
+</footer>
+
+<script>
+
+/* ===== TYPING EFFECT ===== */
+const text="☁️ Aspiring Software Engineer | Cloud & DevOps Learner";
+let i=0;
+function typing(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,40);
+}}
+typing();
+
+/* ===== SCROLL REVEAL ===== */
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+},{threshold:0.1});
+
+document.querySelectorAll('.card,.ach-card').forEach(el=>{
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
