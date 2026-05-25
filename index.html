@@ -34,7 +34,6 @@
     overflow-x: hidden;
   }
 
-  /* ── NAV ── */
   nav {
     position: sticky;
     top: 0;
@@ -85,14 +84,12 @@
   }
   .nav-hire:hover { background: rgba(201,168,76,0.1) !important; }
 
-  /* ── CONTAINER ── */
   .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2rem;
   }
 
-  /* ── SECTIONS ── */
   section { padding: 5rem 0; }
   .divider { border: none; border-top: 1px solid var(--line); }
   .eyebrow {
@@ -117,7 +114,6 @@
   }
   .sec-title em { font-style: italic; color: var(--gold); }
 
-  /* Fade-in effect classes */
   .fi {
     opacity: 0;
     transform: translateY(28px);
@@ -125,7 +121,6 @@
   }
   .fi.visible { opacity: 1; transform: none; }
 
-  /* ── HERO ── */
   .hero {
     padding: 6rem 0 5rem;
     border-bottom: 1px solid var(--line);
@@ -219,7 +214,6 @@
   }
   .btn-outline:hover { border-color: var(--gold3); color: var(--gold); transform: translateY(-2px); }
 
-  /* availability card */
   .avail-card {
     background: var(--ink2);
     border: 1px solid var(--line);
@@ -280,7 +274,6 @@
   }
   .avail-icon { color: var(--gold); flex-shrink: 0; margin-top: 3px; }
 
-  /* ── STATS ── */
   .stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -313,7 +306,6 @@
     margin-top: 5px;
   }
 
-  /* ── ABOUT ── */
   .about-grid {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -362,7 +354,6 @@
   .meta-val a { color: inherit; text-decoration: none; }
   .meta-val a:hover { color: var(--gold); }
 
-  /* ── PROJECTS ── */
   .proj-list { display: flex; flex-direction: column; gap: 12px; }
   .proj {
     background: var(--ink2);
@@ -430,7 +421,6 @@
     background: rgba(201,168,76,0.06);
   }
 
-  /* ── EXPERIENCE ── */
   .exp-list { display: flex; flex-direction: column; gap: 14px; }
   .exp {
     background: var(--ink2);
@@ -491,7 +481,6 @@
     top: 7px;
   }
 
-  /* ── SKILLS ── */
   .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 3rem; }
   .sk-card {
     background: var(--ink2);
@@ -525,9 +514,7 @@
   }
   .chip:hover { border-color: var(--line2); color: var(--text); }
 
-  /* skill bars */
   .bars { display: flex; flex-direction: column; gap: 1.5rem; }
-  .bar-row {}
   .bar-top {
     display: flex;
     justify-content: space-between;
@@ -555,7 +542,6 @@
   }
   .bar-fill.animated { transform: scaleX(1); }
 
-  /* ── EDUCATION ── */
   .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .edu-card {
     background: var(--ink2);
@@ -581,7 +567,6 @@
   }
   .edu-school { font-size: 13px; color: var(--muted); }
 
-  /* ── ACHIEVEMENTS ── */
   .ach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
   .ach-card {
     background: var(--ink2);
@@ -601,7 +586,6 @@
   }
   .ach-desc { font-size: 13px; color: var(--muted); line-height: 1.6; font-weight: 300; }
 
-  /* ── CONTACT ── */
   .contact-box {
     background: var(--ink2);
     border: 1px solid var(--line);
@@ -662,7 +646,6 @@
   }
   .clink-val { font-size: 13px; font-weight: 500; color: var(--text); margin-top: 2px; }
 
-  /* ── FOOTER ── */
   footer {
     border-top: 1px solid var(--line);
     padding: 1.75rem 0;
@@ -680,7 +663,6 @@
   .foot-name { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--gold); font-style: italic; }
   .foot-copy { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.08em; }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     .hero-grid, .about-grid, .contact-inner { grid-template-columns: 1fr; }
     .avail-card { display: none; }
@@ -713,13 +695,14 @@
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="hero-tag">Available for entry-level roles · 2026</div>
+        <div class="hero-tag">B.Tech Graduate · Open to Opportunities · 2026</div>
         <span class="hero-name">Sreevatsan V</span>
         <span class="hero-role">Developer &amp; Builder</span>
         <div class="hero-bar"></div>
         <p class="hero-bio">
-          Final-year <strong>B.Tech CSBS</strong> student at Sri Sairam Engineering College, Chennai.
-          I build responsive web experiences, automate deployment pipelines, and explore <strong>AI/ML</strong> — driven by curiosity and a hunger to ship real things.
+          <strong>B.Tech CSBS graduate</strong> from Sri Sairam Engineering College, Chennai —
+          where <em style="color:var(--gold); font-style:normal;">curiosity became code</em>. I <em style="color:var(--gold); font-style:normal;">craft</em> responsive web experiences, <em style="color:var(--gold); font-style:normal;">engineer</em> automated deployment pipelines, and venture into the world of <strong>AI/ML</strong>.
+          Not just a learner — a <em style="color:var(--gold); font-style:normal;">builder</em> who ships real things and grows with every line.
         </p>
         <div class="hero-btns">
           <a href="#contact" id="btn-contact" class="btn-gold">✉ &nbsp;Contact Me</a>
@@ -730,12 +713,12 @@
         <div class="avail-label">Current Status</div>
         <div class="avail-status">
           <div class="pulse"></div>
-          <span>Open to Work</span>
+          <span>Open to Opportunities</span>
         </div>
         <div class="avail-rows">
           <div class="avail-row"><span class="avail-icon">📍</span><div><strong>Location</strong>Chennai, Tamil Nadu</div></div>
-          <div class="avail-row"><span class="avail-icon">🎓</span><div><strong>Degree</strong>B.Tech CSBS · 2026</div></div>
-          <div class="avail-row"><span class="avail-icon">🎯</span><div><strong>Target</strong>Entry-level · Service roles</div></div>
+          <div class="avail-row"><span class="avail-icon">🎓</span><div><strong>Degree</strong>B.Tech CSBS · Graduated 2026</div></div>
+          <div class="avail-row"><span class="avail-icon">🎯</span><div><strong>Target</strong>Entry-level · Any Domain</div></div>
           <div class="avail-row"><span class="avail-icon">⚡</span><div><strong>Response</strong>Within 24 hours</div></div>
         </div>
       </div>
@@ -751,15 +734,15 @@
       <div class="stat"><div class="stat-n">2</div><div class="stat-l">Internships</div></div>
       <div class="stat"><div class="stat-n">2</div><div class="stat-l">Projects</div></div>
       <div class="stat"><div class="stat-n">4+</div><div class="stat-l">Skill Domains</div></div>
-      <div class="stat"><div class="stat-n">'26</div><div class="stat-l">Graduating</div></div>
+      <div class="stat"><div class="stat-n">'26</div><div class="stat-l">Graduated</div></div>
     </div>
 
     <div class="about-grid">
       <div class="fi">
-        <p class="about-p">I'm a <strong>final-year CSBS student</strong> who believes the best way to learn is to build. From crafting pixel-perfect web interfaces to configuring CI/CD pipelines that ship code automatically — I've done it hands-on through real internships.</p>
+        <p class="about-p">I'm a <strong>B.Tech CSBS graduate</strong> who believes the best way to learn is to build. From crafting pixel-perfect web interfaces to configuring CI/CD pipelines that ship code automatically — I've done it hands-on through real internships.</p>
         <p class="about-p">My internship at <strong>Oasis Infobyte</strong> sharpened my front-end fundamentals. At <strong>BigSiBucks Pvt Ltd</strong>, I stepped into AI/ML — preprocessing data and implementing foundational models. Two different worlds, one consistent trait: <strong>I deliver.</strong></p>
         <blockquote class="about-quote">"Quick learner, strong team player, continuous improvement mindset — ready for day one."</blockquote>
-        <p class="about-p">I'm actively targeting entry-level roles in service-based companies where I can contribute immediately and grow fast.</p>
+        <p class="about-p">I'm actively targeting entry-level roles where I can contribute immediately, grow fast, and take on meaningful technical challenges from the start.</p>
       </div>
       <div class="meta-cards fi">
         <div class="meta-card"><span class="meta-icon">🎓</span><div><div class="meta-lbl">Education</div><div class="meta-val">Sri Sairam Engineering College</div></div></div>
@@ -790,13 +773,14 @@
           <a href="https://github.com/Sreevatsan08/Boardgame" target="_blank" class="proj-link" title="View on GitHub">↗</a>
         </div>
         <div class="proj-body">
-          <p class="proj-desc">Designed and implemented a complete automated pipeline that handles build, testing, and deployment — eliminating manual steps from the software delivery cycle. Integrated Prometheus monitoring to track pipeline health and performance metrics in real time.</p>
+          <p class="proj-desc">Designed and implemented a complete automated pipeline using <strong style="color:var(--text)">Jenkins</strong> for build, testing, and deployment — eliminating manual steps from the software delivery cycle. Containerised applications with <strong style="color:var(--text)">Docker</strong>, orchestrated workloads via <strong style="color:var(--text)">Kubernetes</strong>, and monitored logs in real time using <strong style="color:var(--text)">AWS CloudWatch</strong>.</p>
           <div class="tags">
+            <span class="tag">Jenkins</span>
             <span class="tag">CI/CD</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">CloudWatch</span>
             <span class="tag">DevOps</span>
-            <span class="tag">Prometheus</span>
-            <span class="tag">Automation</span>
-            <span class="tag">Cloud</span>
           </div>
         </div>
       </div>
@@ -806,17 +790,18 @@
           <div class="proj-num">02</div>
           <div>
             <div class="proj-name">ResQube</div>
-            <div class="proj-sub">Solution-based application development</div>
+            <div class="proj-sub">Cross-platform emergency response application</div>
           </div>
           <a href="https://github.com/Sreevatsan08" target="_blank" class="proj-link" title="View on GitHub">↗</a>
         </div>
         <div class="proj-body">
-          <p class="proj-desc">An academic project built around solving a real-world problem through a structured web application. Focused on user-centred design, clean code architecture, and delivering a functional product from ideation through deployment.</p>
+          <p class="proj-desc">A cross-functional emergency response app connecting drivers and patients in real time. Uses <strong style="color:var(--text)">Supabase</strong> as the backend database with <strong style="color:var(--text)">SQL</strong> for data fetching and management. Integrates a <strong style="color:var(--text)">location API</strong> to track both driver and patient coordinates live, then applies shortest-path analysis to automatically dispatch the nearest available driver — minimising response time.</p>
           <div class="tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Web App</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Location API</span>
+            <span class="tag">Shortest Path</span>
+            <span class="tag">Cross-Platform</span>
           </div>
         </div>
       </div>
@@ -855,14 +840,15 @@
           <div class="exp-date">Jun – Jul 2024</div>
           <div class="exp-company">BigSiBucks Pvt Ltd</div>
           <div class="exp-loc">Chennai</div>
-          <div class="exp-badge">AI / ML</div>
+          <div class="exp-badge">Implant Training</div>
         </div>
         <div>
-          <div class="exp-role">AI / ML Intern</div>
+          <div class="exp-role">AI / ML Implant Training</div>
           <ul class="exp-points">
-            <li>Assisted in developing foundational Machine Learning models under senior data scientists.</li>
-            <li>Performed end-to-end data preprocessing — cleaning, transforming, and preparing datasets for model training.</li>
-            <li>Implemented basic ML models and validated outputs, strengthening understanding of the full ML lifecycle.</li>
+            <li>Completed a structured implant training programme — starting from Python fundamentals and progressively building up through core ML concepts.</li>
+            <li>Covered key Python libraries used in data science and ML workflows, gaining hands-on familiarity with the ecosystem.</li>
+            <li>Walked through foundational model implementations: Linear Regression, MNIST digit classification, and Sentiment Analysis.</li>
+            <li>Got an introductory exposure to the YOLO model and understood the basics of object detection pipelines.</li>
           </ul>
         </div>
       </div>
@@ -880,9 +866,9 @@
 
     <div class="skills-grid">
       <div class="sk-card fi"><div class="sk-head">Web Development</div><div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Responsive Design</span></div></div>
-      <div class="sk-card fi"><div class="sk-head">Cloud &amp; DevOps</div><div class="chips"><span class="chip">Cloud Fundamentals</span><span class="chip">CI/CD</span><span class="chip">Prometheus</span></div></div>
-      <div class="sk-card fi"><div class="sk-head">AI / ML &amp; Data</div><div class="chips"><span class="chip">Data Preprocessing</span><span class="chip">ML Model Basics</span><span class="chip">SQL (Basic)</span></div></div>
-      <div class="sk-card fi"><div class="sk-head">Programming &amp; Tools</div><div class="chips"><span class="chip">C++ (Basics)</span><span class="chip">Git</span><span class="chip">VS Code</span></div></div>
+      <div class="sk-card fi"><div class="sk-head">Cloud &amp; DevOps</div><div class="chips"><span class="chip">Jenkins</span><span class="chip">CI/CD Pipelines</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">CloudWatch</span><span class="chip">Cloud Fundamentals</span></div></div>
+      <div class="sk-card fi"><div class="sk-head">AI / ML &amp; Data</div><div class="chips"><span class="chip">Python</span><span class="chip">Python Libraries</span><span class="chip">Linear Regression</span><span class="chip">MNIST</span><span class="chip">Sentiment Analysis</span><span class="chip">YOLO Basics</span></div></div>
+      <div class="sk-card fi"><div class="sk-head">Programming &amp; Tools</div><div class="chips"><span class="chip">SQL (Basics)</span><span class="chip">PL/SQL (Basics)</span><span class="chip">C++ (Basics)</span><span class="chip">Git</span><span class="chip">VS Code</span></div></div>
     </div>
 
     <div class="fi">
@@ -892,7 +878,7 @@
           <div class="bar-track"><div class="bar-fill" style="width:40%; background: linear-gradient(90deg,#8B6914,#C9A84C,#F0D080)"></div></div>
         </div>
         <div class="bar-row">
-          <div class="bar-top"><span class="bar-name">CI/CD &amp; DevOps</span><span class="bar-level">Foundational</span></div>
+          <div class="bar-top"><span class="bar-name">CI/CD &amp; DevOps</span><span class="bar-level">Hands-on · Project Experience</span></div>
           <div class="bar-track"><div class="bar-fill" style="width:55%; background: linear-gradient(90deg,#0e9488,#4ECDC4)"></div></div>
         </div>
         <div class="bar-row">
@@ -918,7 +904,7 @@
       <div class="edu-card fi">
         <div class="edu-yr">2022 – 2026</div>
         <div class="edu-deg">B.Tech — Computer Science &amp; Business Systems</div>
-        <div class="edu-school">Sri Sairam Engineering College · Chennai</div>
+        <div class="edu-school">Sri Sairam Engineering College · Chennai &nbsp;·&nbsp; Graduated</div>
       </div>
       <div class="edu-card fi">
         <div class="edu-yr">2020 – 2022</div>
@@ -941,7 +927,7 @@
       <div class="ach-card fi"><span class="ach-icon">🤝</span><div class="ach-title">Team Player</div><div class="ach-desc">Collaborated effectively in cross-functional environments from day one.</div></div>
       <div class="ach-card fi"><span class="ach-icon">🔄</span><div class="ach-title">Continuous Learner</div><div class="ach-desc">Actively upskilling in Cloud, DevOps, and AI/ML beyond the curriculum.</div></div>
       <div class="ach-card fi"><span class="ach-icon">🛠️</span><div class="ach-title">Builder Mindset</div><div class="ach-desc">Prefers learning by doing — every project is a shipped, real product.</div></div>
-      <div class="ach-card fi"><span class="ach-icon">🎯</span><div class="ach-title">Goal Oriented</div><div class="ach-desc">Structured and focused, actively preparing for entry-level professional roles.</div></div>
+      <div class="ach-card fi"><span class="ach-icon">🎯</span><div class="ach-title">Goal Oriented</div><div class="ach-desc">Structured and focused, actively pursuing the next professional chapter.</div></div>
     </div>
   </div>
 </section>
@@ -955,7 +941,7 @@
         <div class="contact-left">
           <div class="eyebrow">Contact</div>
           <h2>Ready to <em>Connect?</em></h2>
-          <p>I am currently seeking entry-level opportunities where I can apply my skills in Web Development, DevOps, and ML. If you're looking for a dedicated, fast-learning developer to join your team, let's talk.</p>
+          <p>I'm a fresh B.Tech graduate seeking entry-level opportunities where I can apply my skills in Web Development, DevOps, and ML. If you're looking for a dedicated, fast-learning developer to join your team — across any domain or industry — let's talk.</p>
         </div>
         <div class="clinks">
           <a href="mailto:sreevatsan943@gmail.com" class="clink">
@@ -1000,17 +986,12 @@
 </footer>
 
 <script>
-  // Intersection Observer for Fade-in Animations and Skill Bars
-  const observerOptions = {
-    threshold: 0.15
-  };
+  const observerOptions = { threshold: 0.15 };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        
-        // If the element is the skills section container, animate the bars
         if (entry.target.id === 'skills') {
           const fills = entry.target.querySelectorAll('.bar-fill');
           fills.forEach(fill => fill.classList.add('animated'));
@@ -1019,14 +1000,11 @@
     });
   }, observerOptions);
 
-  // Observe all elements with the .fi class
   document.querySelectorAll('.fi').forEach(el => observer.observe(el));
   
-  // Explicitly observe skills section for the bars
   const skillsSec = document.getElementById('skills');
   if(skillsSec) observer.observe(skillsSec);
 
-  // Hero Contact button smooth scroll
   const heroContactBtn = document.getElementById('btn-contact');
   if(heroContactBtn) {
     heroContactBtn.addEventListener('click', (e) => {
